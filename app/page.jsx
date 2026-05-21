@@ -4,399 +4,97 @@ import React from "react";
 import {
   ShieldCheck,
   Server,
-  Cloud,
-  Headphones,
+  Globe,
   Lock,
-  Network,
-  Mail,
-  Phone,
-  MapPin,
+  Database,
+  Cloud,
 } from "lucide-react";
 
-const logoUrl = "/images/olaribo.png";
-
-const services = [
-  {
-    icon: Cloud,
-    title: "IT Procurement",
-    text: "Supply of business software, laptops, desktops, networking equipment, printers, and office technology.",
-  },
-  {
-    icon: Server,
-    title: "Office Supplies",
-    text: "Sourcing office accessories, IT peripherals, productivity tools, and workplace essentials.",
-  },
-  {
-    icon: Headphones,
-    title: "Managed IT Support",
-    text: "Day-to-day IT management, monitoring, maintenance, and user support for growing businesses.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Cybersecurity",
-    text: "Protection for devices, networks, email, and business data using practical security controls.",
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Solutions",
-    text: "Microsoft 365, cloud backup, secure collaboration, migration support, and productivity setup.",
-  },
-  {
-    icon: Network,
-    title: "Network Management",
-    text: "Business Wi-Fi, routers, firewalls, troubleshooting, and resilient connectivity.",
-  },
-  {
-    icon: Lock,
-    title: "Backup & Recovery",
-    text: "Backup planning, recovery testing, and continuity support to keep business data protected.",
-  },
-  {
-    icon: Server,
-    title: "Device Onboarding",
-    text: "User setup, device configuration, software installation, and secure offboarding support.",
-  },
-];
-
 export default function Home() {
+  const services = [
+    {
+      icon: <ShieldCheck className="w-8 h-8 text-blue-500" />,
+      title: "Cyber Security",
+      description:
+        "Protect your systems and data with enterprise-grade security solutions.",
+    },
+    {
+      icon: <Server className="w-8 h-8 text-green-500" />,
+      title: "Cloud Infrastructure",
+      description:
+        "Scalable and reliable cloud infrastructure for modern businesses.",
+    },
+    {
+      icon: <Globe className="w-8 h-8 text-purple-500" />,
+      title: "Web Solutions",
+      description:
+        "Modern, responsive, and high-performance web applications.",
+    },
+    {
+      icon: <Lock className="w-8 h-8 text-red-500" />,
+      title: "Data Protection",
+      description:
+        "Advanced encryption and protection for critical business data.",
+    },
+    {
+      icon: <Database className="w-8 h-8 text-yellow-500" />,
+      title: "Database Management",
+      description:
+        "Efficient database architecture and optimization services.",
+    },
+    {
+      icon: <Cloud className="w-8 h-8 text-cyan-500" />,
+      title: "Cloud Backup",
+      description:
+        "Secure cloud backup and disaster recovery solutions.",
+    },
+  ];
+
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        background: "#000000",
-        color: "white",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
-      {/* HEADER */}
-      <header
-        style={{
-          borderBottom: "1px solid rgba(255,255,255,0.1)",
-          padding: "20px 40px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          position: "sticky",
-          top: 0,
-          background: "#000000",
-          zIndex: 1000,
-        }}
-      >
-        <img
-          src={logoUrl}
-          alt="Olaribo Logo"
-          style={{
-            height: "55px",
-            width: "auto",
-            borderRadius: "10px",
-          }}
-        />
+    <main className="min-h-screen bg-gray-950 text-white">
+      {/* Hero Section */}
+      <section className="py-24 px-6 text-center">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          Secure. Scalable. Modern.
+        </h1>
 
-        <div style={{ display: "flex", gap: "25px" }}>
-          <a
-            href="#services"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Services
-          </a>
-
-          <a
-            href="#contact"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Contact
-          </a>
-        </div>
-      </header>
-
-      {/* HERO */}
-      <section
-        style={{
-          padding: "80px 40px",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "60px",
-          alignItems: "center",
-        }}
-      >
-        <div>
-          <div
-            style={{
-              display: "inline-block",
-              background: "#111827",
-              padding: "10px 18px",
-              borderRadius: "999px",
-              marginBottom: "20px",
-              color: "#22d3ee",
-              fontSize: "14px",
-            }}
-          >
-            Managed IT Services
-          </div>
-
-          <h1
-            style={{
-              fontSize: "60px",
-              lineHeight: "1.1",
-              marginBottom: "25px",
-            }}
-          >
-            Reliable IT support that keeps your business running.
-          </h1>
-
-          <p
-            style={{
-              color: "#cbd5e1",
-              fontSize: "20px",
-              lineHeight: "1.7",
-              maxWidth: "700px",
-            }}
-          >
-            Olaribo Business Solution provides managed IT services,
-            cybersecurity, cloud solutions, procurement, and device support for
-            modern businesses.
-          </p>
-
-          <div
-            style={{
-              marginTop: "35px",
-              display: "flex",
-              gap: "20px",
-              flexWrap: "wrap",
-            }}
-          >
-            <button
-              style={{
-                background: "#06b6d4",
-                color: "black",
-                padding: "16px 28px",
-                borderRadius: "14px",
-                border: "none",
-                fontWeight: "bold",
-                cursor: "pointer",
-              }}
-            >
-              Book Free IT Review
-            </button>
-
-            <button
-              style={{
-                background: "transparent",
-                color: "white",
-                padding: "16px 28px",
-                borderRadius: "14px",
-                border: "1px solid rgba(255,255,255,0.2)",
-                cursor: "pointer",
-              }}
-            >
-              View Services
-            </button>
-          </div>
-        </div>
-
-        <div
-          style={{
-            background: "#111111",
-            borderRadius: "30px",
-            padding: "40px",
-            border: "1px solid rgba(255,255,255,0.1)",
-          }}
-        >
-          <img
-            src={logoUrl}
-            alt="Olaribo Business Solution"
-            style={{
-              width: "220px",
-              margin: "0 auto",
-              display: "block",
-              borderRadius: "20px",
-            }}
-          />
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "20px",
-              marginTop: "40px",
-            }}
-          >
-            <div
-              style={{
-                background: "#000000",
-                padding: "20px",
-                borderRadius: "20px",
-              }}
-            >
-              <h2 style={{ color: "#22d3ee", fontSize: "32px" }}>24/7</h2>
-              <p style={{ color: "#cbd5e1" }}>Monitoring options</p>
-            </div>
-
-            <div
-              style={{
-                background: "#000000",
-                padding: "20px",
-                borderRadius: "20px",
-              }}
-            >
-              <h2 style={{ color: "#f97316", fontSize: "32px" }}>Fast</h2>
-              <p style={{ color: "#cbd5e1" }}>Remote support</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SERVICES */}
-      <section id="services" style={{ padding: "80px 40px" }}>
-        <h2
-          style={{
-            fontSize: "48px",
-            marginBottom: "15px",
-          }}
-        >
-          Our Services
-        </h2>
-
-        <p
-          style={{
-            color: "#cbd5e1",
-            marginBottom: "50px",
-            fontSize: "18px",
-          }}
-        >
-          Complete managed IT and procurement support for growing businesses.
+        <p className="max-w-2xl mx-auto text-lg text-gray-300 mb-8">
+          We provide world-class IT infrastructure, cloud services,
+          cybersecurity, and modern web solutions for businesses worldwide.
         </p>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
-            gap: "25px",
-          }}
-        >
-          {services.map((service) => {
-            const Icon = service.icon;
+        <button className="bg-blue-600 hover:bg-blue-700 transition px-8 py-3 rounded-xl font-semibold">
+          Get Started
+        </button>
+      </section>
 
-            return (
+      {/* Services */}
+      <section className="px-6 pb-24">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-14">
+            Our Services
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {services.map((service, index) => (
               <div
-                key={service.title}
-                style={{
-                  background: "#111111",
-                  borderRadius: "24px",
-                  padding: "30px",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                }}
+                key={index}
+                className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-blue-500 transition"
               >
-                <div
-                  style={{
-                    background: "#0f172a",
-                    width: "60px",
-                    height: "60px",
-                    borderRadius: "16px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginBottom: "20px",
-                  }}
-                >
-                  <Icon size={28} color="#22d3ee" />
-                </div>
+                <div className="mb-5">{service.icon}</div>
 
-                <h3
-                  style={{
-                    fontSize: "24px",
-                    marginBottom: "15px",
-                  }}
-                >
+                <h3 className="text-2xl font-semibold mb-3">
                   {service.title}
                 </h3>
 
-                <p
-                  style={{
-                    color: "#cbd5e1",
-                    lineHeight: "1.7",
-                  }}
-                >
-                  {service.text}
+                <p className="text-gray-400">
+                  {service.description}
                 </p>
               </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section
-        id="contact"
-        style={{
-          padding: "80px 40px",
-        }}
-      >
-        <div
-          style={{
-            background: "#111111",
-            borderRadius: "30px",
-            padding: "50px",
-            border: "1px solid rgba(255,255,255,0.1)",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "48px",
-              marginBottom: "20px",
-            }}
-          >
-            Ready to make IT easier?
-          </h2>
-
-          <p
-            style={{
-              color: "#cbd5e1",
-              fontSize: "18px",
-              lineHeight: "1.8",
-              maxWidth: "700px",
-            }}
-          >
-            Contact Olaribo Business Solution for managed IT support,
-            procurement assistance, cloud solutions, and cybersecurity services.
-          </p>
-
-          <div
-            style={{
-              marginTop: "40px",
-              display: "grid",
-              gap: "20px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-              <Mail color="#22d3ee" />
-              <span>info@olaribo.com</span>
-            </div>
-
-            <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-              <Phone color="#22d3ee" />
-              <span>+44 7847 777499</span>
-            </div>
-
-            <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-              <MapPin color="#22d3ee" />
-              <span>United Kingdom</span>
-            </div>
+            ))}
           </div>
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer
-        style={{
-          borderTop: "1px solid rgba(255,255,255,0.1)",
-          padding: "30px",
-          textAlign: "center",
-          color: "#94a3b8",
-        }}
-      >
-        © {new Date().getFullYear()} Olaribo Business Solution. All rights reserved.
-      </footer>
     </main>
   );
 }
