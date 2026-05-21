@@ -169,7 +169,7 @@ export default function Home() {
 
           <div style={{ marginTop: 28, display: "grid", gap: 14, color: "#cbd5e1" }}>
             <p><Mail size={18} color="#67e8f9" /> info@olaribo.com</p>
-            <p><Phone size={18} color="#67e8f9" /> +44 0000 000000</p>
+            <p><Phone size={18} color="#67e8f9" /> +44 7847 777499</p>
             <p><MapPin size={18} color="#67e8f9" /> United Kingdom</p>
           </div>
         </div>
