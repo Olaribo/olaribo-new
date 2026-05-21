@@ -375,7 +375,7 @@ export default function Home() {
 
             <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
               <Phone color="#22d3ee" />
-              <span>+44 0000 000000</span>
+              <span>+44 7847 777499</span>
             </div>
 
             <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
