@@ -19,14 +19,14 @@ const logoUrl = "/images/Olaribo Business Solutions-03.png";
 const formEndpoint = "https://formspree.io/f/YOUR_FORM_ID";
 
 const services = [
-  { icon: Cloud, title: "IT Procurement", text: "Procurement and supply of business software, laptops, desktops, networking equipment, printers, and office technology solutions." },
-  { icon: Server, title: "Office Supplies & Equipment", text: "Reliable sourcing of office accessories, IT peripherals, productivity tools, and workplace essentials for growing businesses." },
   { icon: Server, title: "Managed IT Support & IT Transformation Services", text: "Reliable day-to-day IT project delivert & management,infrastrcuture deployment, monitoring, maintenance and user support for growing businesses." },
   { icon: ShieldCheck, title: "Cybersecurity", text: "Protect devices, networks, email, and business data with practical security controls and monitoring." },
+  { icon: Cloud, title: "IT Procurement", text: "Procurement and supply of business software, laptops, desktops, networking equipment, printers, and office technology solutions." },
   { icon: Cloud, title: "Cloud Solutions", text: "Microsoft 365, cloud backup, secure collaboration, migration support, and productivity setup." },
   { icon: Network, title: "Network Management", text: "Business Wi-Fi, routers, firewalls, structured troubleshooting, and resilient connectivity." },
   { icon: Lock, title: "Backup & Recovery", text: "Keep business data protected with backup planning, recovery testing, and continuity support." },
   { icon: Headphones, title: "Helpdesk Services", text: "Friendly remote and onsite support to resolve issues quickly and reduce downtime." },
+  { icon: Server, title: "Office Supplies & Equipment", text: "Reliable sourcing of office accessories, IT peripherals, productivity tools, and workplace essentials for growing businesses." },
 ];
 
 const benefits = [
