@@ -21,7 +21,7 @@ const formEndpoint = "https://formspree.io/f/YOUR_FORM_ID";
 const services = [
   { icon: Cloud, title: "IT Procurement", text: "Procurement and supply of business software, laptops, desktops, networking equipment, printers, and office technology solutions." },
   { icon: Server, title: "Office Supplies & Equipment", text: "Reliable sourcing of office accessories, IT peripherals, productivity tools, and workplace essentials for growing businesses." },
-  { icon: Server, title: "Managed IT Support", text: "Reliable day-to-day IT management, monitoring, maintenance, and user support for growing businesses." },
+  { icon: Server, title: "Managed IT Support & IT Transformation Services", text: "Reliable day-to-day IT project delivert & management,infrastrcuture deployment, monitoring, maintenance and user support for growing businesses." },
   { icon: ShieldCheck, title: "Cybersecurity", text: "Protect devices, networks, email, and business data with practical security controls and monitoring." },
   { icon: Cloud, title: "Cloud Solutions", text: "Microsoft 365, cloud backup, secure collaboration, migration support, and productivity setup." },
   { icon: Network, title: "Network Management", text: "Business Wi-Fi, routers, firewalls, structured troubleshooting, and resilient connectivity." },
