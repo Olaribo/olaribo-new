@@ -186,7 +186,7 @@ export default function Home() {
             <div style={{ marginTop: 28, display: "grid", gap: 14, color: "#d8f4ff" }}>
               <p><Mail size={18} color="#83D3F6" /> info@olaribo.com</p>
               <p><Phone size={18} color="#83D3F6" /> +44 7847 777499</p>
-              <p><MapPin size={18} color="#83D3F6" /> United Kingdom</p>
+              <p><MapPin size={18} color="#83D3F6" /> GLOBAL</p>
             </div>
           </div>
 
