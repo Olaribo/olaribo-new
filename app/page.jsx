@@ -34,7 +34,8 @@ const benefits = [
   "Clear monthly support plans with no IT jargon",
   "Security-first approach for small and growing teams",
   "Remote and onsite support options",
-  "Business procurement for hardware, software, and office supplies",
+  "Business procurement for hardware, software, and office supplies"
+  "End-to-end IT transformation project delivery for infrastructure upgrades, cloud migration, modern workplace deployment, and digital business improvement",
 ];
 
 const steps = [
