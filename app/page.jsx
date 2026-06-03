@@ -70,6 +70,7 @@ export default function Home() {
             <a href="#services" style={{ color: "#d8f4ff", textDecoration: "none" }}>Services</a>
             <a href="#about" style={{ color: "#d8f4ff", textDecoration: "none" }}>Why Olaribo</a>
             <a href="#process" style={{ color: "#d8f4ff", textDecoration: "none" }}>Process</a>
+            <a href="/solar" style={{ color: "#d8f4ff", textDecoration: "none" }}>Solar Solutions</a>
             <a href="#contact" style={{ color: "#d8f4ff", textDecoration: "none" }}>Contact</a>
           </nav>
 
